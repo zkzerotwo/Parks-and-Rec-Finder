@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Template</title>
+  </head>
+  <body>
+    <form id="park-search">
+      <label for="park-search">Search U.S. National Parks: </label>
+      <input type="text" id="state" name="search-parks" placeholder="IL"></input>
+      <label for="parks-returned">How many results?</label>
+      <input type="number" id="parks" name="repos-returned" placeholder="5" min="1" max="10"></input>
+      <button type="submit">Search</button>
+    </form>
+    <section class="results hidden">
+      <h2>
+        <div class="park-list">
+          <ul id="results-list">
+          </ul>
+        </div>
+      </h2>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
